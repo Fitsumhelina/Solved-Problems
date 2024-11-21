@@ -27,17 +27,17 @@ Output: 4
 
 var searchInsert = function (nums, target) {
   // solution1
-  // for (let i = 0; i < nums.length; i++) {
-  //     if (nums[i] === target) {
-  //         return i
-  //     }
-  //     else {
-  //         nums.push(target)
-  //         nums.sort((a, b) => a - b);
+  for (let i = 0; i < nums.length; i++) {
+      if (nums[i] === target) {
+          return i
+      }
+      else {
+          nums.push(target)
+          nums.sort((a, b) => a - b);
 
-  //         return nums.indexOf(target)
-  //     }
-  // }
+          return nums.indexOf(target)
+      }
+  }
 
   //solution 2
 
