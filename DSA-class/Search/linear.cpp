@@ -24,6 +24,6 @@ int main(int argc, char** argv)
 	}
 	
 	t2 = clock();
-	cout<<(t2-t1)/CLOCKS_PER_SEC;
+	cout<<"time takes : "<<(t2-t1)/CLOCKS_PER_SEC<<"sec";
 	return 0;
 }
