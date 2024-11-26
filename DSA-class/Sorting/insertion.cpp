@@ -11,18 +11,24 @@ int main(int argc, char** argv)
   cout<<"Enter those numbers "<<n<<endl;
     for(int i=0;i<n;i++)
     cin>>arr[i];
-  
-
-  //main algorithm
-  for (int i= 0;i<n-2;i++){
-    for (int j=0;j<n-1-i;j++){
-      if (arr[j]>arr[j+1]){
-        int temp = arr[j];
-        arr[j] = arr[j+1];
-        arr[j+1] = temp;
-      }
+//main algorthim 
+for (int i=1; i<n; i++){
+    for (int j=i; j>0; j--){
+        if (arr[j-1]>arr[j]){
+            int temp = arr[j];
+            arr[j] = arr[j-1];
+            arr[j-1] = temp;
+        }
+        else{
+            break;
+        }
+          
     }
-  }
+}
+
+
+
+
   cout<<"After sorting the given number"<<endl;
   for(int i=0;i<n;i++)
     cout<<arr[i]<<endl;
