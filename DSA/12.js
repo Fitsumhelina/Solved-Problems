@@ -50,3 +50,15 @@ var plusOne = function(digits) {
     digits.unshift(1);
     return digits;
 };
+
+
+const readline = require('readline');
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Please type "your name": ', (answer) => {
+  console.log(`You entered: ${answer}`);
+  rl.close();
+});
