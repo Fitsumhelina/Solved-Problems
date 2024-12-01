@@ -44,3 +44,33 @@ var mySqrt = function (x) {
 
     return right
 };
+
+
+// ### Example with \( x = 8 \):
+
+// 1. **Initial Range:** We start with `left = 0` and `right = 8`.
+// 2. **First Midpoint Calculation:** 
+//    - `mid = Math.floor((0 + 8) / 2) = 4`
+//    - \( 4^2 = 16 \), which is greater than 8, so we know that the square root is less than 4.
+//    - We update `right = 3`.
+// 3. **Second Midpoint Calculation:** 
+//    - `mid = Math.floor((0 + 3) / 2) = 1`
+//    - \( 1^2 = 1 \), which is less than 8, so we move `left = 2`.
+// 4. **Third Midpoint Calculation:** 
+//    - `mid = Math.floor((2 + 3) / 2) = 2`
+//    - \( 2^2 = 4 \), which is less than 8, so we update `left = 3`.
+// 5. **Final Midpoint Calculation:**
+//    - `mid = 3`
+//    - \( 3^2 = 9 \), which is greater than 8, so we update `right = 2`.
+// 6. **End of Search:** At this point, `left` has passed `right`, and the closest integer square root is the `right` value, which is 2.
+
+// ### Why Not Just Try All Numbers?
+
+// You could theoretically loop from 0 to \( x \) and check each number, but that would take \( O(x) \) time, which is much slower for large values of \( x \). 
+
+// By using binary search, the time complexity reduces to \( O(\log(x)) \), which is much faster because it halves the search space at each step.
+
+// ### Conclusion:
+
+// Even though \( x \) is a single number, the reason we use `left` and `right` pointers is to apply binary search, which efficiently finds the integer square root in \( O(\log(x)) \) time. This approach works by continuously halving the range of possible values for the square root, making it much more efficient than checking every possible value from 0 to \( x \).
+
