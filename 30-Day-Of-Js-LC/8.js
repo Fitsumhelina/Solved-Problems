@@ -36,4 +36,7 @@ Explanation:
 The composition of zero functions is the identity function
 */
 
+// E:implement the functions
+
+
 
