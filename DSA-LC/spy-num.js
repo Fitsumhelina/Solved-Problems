@@ -1,3 +1,5 @@
+//spy num
+
 const spynumber = (n) => {
     const y = n
     let sum=0  

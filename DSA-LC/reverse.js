@@ -1,3 +1,6 @@
+//reverse
+
+
 const reverse = (n) =>{
     let reversed=0
     y =n.toString()
