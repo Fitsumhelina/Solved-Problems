@@ -21,6 +21,26 @@ const prime = (num) => {
         }
   
     }
-  }}
-  
-  prime (10)
+
+
+  let count  = 0;
+  for(let i = 0; i <num; i++) {
+        if (num <2){
+          console.log( `nether prime nor composite`);
+        }
+        else {
+          if (num % i === 0){
+            count++;
+          }
+        }
+      }
+        if (count >2){
+          console.log( `it is compo `)
+        }
+        else{
+          console.log( `it is prime `)
+        }   
+      }
+    }
+
+prime (5)
