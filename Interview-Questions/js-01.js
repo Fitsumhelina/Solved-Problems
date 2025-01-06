@@ -35,10 +35,15 @@
 // abc ()
 // console.log(abc())
 
-{
-    function abc (){
-        console.log("hello");
-    }
-}
+// 'use strict'
+// {
+    //     function abc (){
+        //         console.log("hello");
+        //     }
+        // }
 
-abc()
+// abc()
+
+// 'use strict'
+// x=10
+// console.log(x)
