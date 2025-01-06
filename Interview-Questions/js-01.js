@@ -35,3 +35,10 @@
 // abc ()
 // console.log(abc())
 
+{
+    function abc (){
+        console.log("hello");
+    }
+}
+
+abc()
