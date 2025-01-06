@@ -20,3 +20,18 @@
 // console.log(parseInt("7FM"))
 // console.log(parseInt("M7F"))
 
+// console.log(isNaN("10"))
+// console.log(isNaN("10+1"))
+
+// console.log([1,2].map(i=> {
+//     if( i>0) return
+//     return i*2
+
+// }))
+
+// function abc () {
+//     return 
+// }
+// abc ()
+// console.log(abc())
+
