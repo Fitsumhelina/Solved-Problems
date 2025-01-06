@@ -31,7 +31,7 @@ int main()
     case 1:insert_big();break;
     case 2: insert_end();break;
     case 3:del_big();break;
-    case 4:del_end();break;
+    case 4:del_end();break;./
     case 5:display();break;
     case 6:ch='n';cout<<"good bye";break;
     default:cout<<"please enter 1-5\n"; break;
