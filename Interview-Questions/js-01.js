@@ -63,5 +63,9 @@
 // const newArr = arr.find(i=> i>4)
 // console.log(newArr)
 
+// difference between framework and library
+
+//useMemory and useCallback
+
 
 
