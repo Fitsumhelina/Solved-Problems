@@ -1,3 +1,5 @@
+// practicemocks223@gmail.com  or rdev67891@gmail.com
+
 // function abc (){
 // console.log(abc.xyz)
 // }
@@ -47,3 +49,19 @@
 // 'use strict'
 // x=10
 // console.log(x)
+
+// function abc (a,b) {
+//    'use strict'
+//     a=100
+//     b=200
+//     return[ arguments[0], arguments[1] ]
+//     console.log(a+b)
+// }
+// console.log(abc(10,20))
+
+// const arr = [1,2,3,4,5,6,7,8]
+// const newArr = arr.find(i=> i>4)
+// console.log(newArr)
+
+
+
