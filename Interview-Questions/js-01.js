@@ -67,5 +67,7 @@
 
 //useMemory and useCallback
 
+//lifecycle method ( mounting and unmounting)
 
+//useEffect syntax 
 
