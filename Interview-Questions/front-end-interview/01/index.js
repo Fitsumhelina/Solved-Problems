@@ -39,10 +39,10 @@
 
 // 'use strict'
 // {
-    //     function abc (){
-        //         console.log("hello");
-        //     }
-        // }
+//         function abc (){
+//                 console.log("hello");
+//             }
+// }
 
 // abc()
 
@@ -55,7 +55,6 @@
 //     a=100
 //     b=200
 //     return[ arguments[0], arguments[1] ]
-//     console.log(a+b)
 // }
 // console.log(abc(10,20))
 
