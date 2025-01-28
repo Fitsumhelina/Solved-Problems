@@ -2,7 +2,7 @@ import javax.swing.*;
 class Main {
     public static void main(String[] args) {
         JFrame frame = new JFrame("Login Form");
-        frame.setSize(400, 400);
+        frame.setSize(400, 450);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
         JLabel nameLabel = new JLabel("Name:");
@@ -33,16 +33,24 @@ class Main {
         JCheckBox studentCheckBox = new JCheckBox("Student");
         studentCheckBox.setBounds(150, 200, 200, 30);
         
+        JLabel countryLabel = new JLabel("Country:");
+        countryLabel.setBounds(50, 250, 80, 30);
+        
+        String[] countries = { "USA", "Canada", "UK", "Australia", "Other" };
+        JComboBox<String> countryComboBox = new JComboBox<>(countries);
+        countryComboBox.setBounds(150, 250, 200, 30);
+        
         JButton submitButton = new JButton("Submit");
-        submitButton.setBounds(150, 250, 100, 30);
+        submitButton.setBounds(150, 300, 100, 30);
         
         submitButton.addActionListener(e -> {
             String name = nameField.getText();
             String password = new String(passwordField.getPassword());
             String sex = maleButton.isSelected() ? "Male" : "Female";
             boolean isStudent = studentCheckBox.isSelected();
+            String country = (String) countryComboBox.getSelectedItem();
             
-            JOptionPane.showMessageDialog(frame, "Name: " + name + "\nPassword: " + password + "\nSex: " + sex + "\nStudent: " + isStudent);
+            JOptionPane.showMessageDialog(frame, "Name: " + name + "\nPassword: " + password + "\nSex: " + sex + "\nStudent: " + isStudent + "\nCountry: " + country);
         });
         
         frame.add(nameLabel);
@@ -53,6 +61,8 @@ class Main {
         frame.add(maleButton);
         frame.add(femaleButton);
         frame.add(studentCheckBox);
+        frame.add(countryLabel);
+        frame.add(countryComboBox);
         frame.add(submitButton);
         
         frame.setLayout(null);
